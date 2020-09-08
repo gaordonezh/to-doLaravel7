@@ -45,8 +45,11 @@
             }
 
             .title {
-                font-size: 100px;
+                font-size: 75px;
                 font-weight: 900;
+            }
+            .title p{
+                font-size: 40px
             }
 
             .links > a {
@@ -95,7 +98,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Daily List
+                    Bienvenidos
+                    <p>A mi portafolio</p>
                 </div>
 
                 <div class="links_cuerpo">

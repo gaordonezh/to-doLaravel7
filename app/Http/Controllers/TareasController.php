@@ -18,7 +18,7 @@ class TareasController extends Controller
 
     public function index()
     {
-        $tareas = Tareas::where('user_id', auth()->user()->id)->orderBy('created_at','desc')->paginate(6);
+        $tareas = Tareas::where('user_id', auth()->user()->id)->orderBy('created_at','desc')->paginate(4);
         return view('tareas.index')->with('tareas',$tareas);
     }
 

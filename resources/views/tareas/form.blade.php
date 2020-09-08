@@ -18,7 +18,7 @@
             <input type="text" name="name_tarea" id="name_tarea" class="form-control" placeholder="Type someone">
         </div>
         <div class="form-group offset-lg-3 col-lg-6 text-center">
-            <input type="submit" class="btn btn-info" value="AGREGAR">
+            <input type="submit" class="btn btn-info" value="ADD">
         </div>
     </form>
 </div>

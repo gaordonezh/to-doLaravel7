@@ -7,7 +7,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>DailyList</title>
+    <title>German Ordoñez</title>
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/1205/1205526.svg">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -19,20 +20,14 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <style>
-        body{
-            background-image: url('https://images.pexels.com/photos/4338173/pexels-photo-4338173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-            
-            
-        }
-    </style>
+    <style>body{background-image: url('https://images.pexels.com/photos/2341830/pexels-photo-2341830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); background-position:center; background-repeat:no-repeat; height:100vh }</style>
 </head>
 <body>
-    <div id="app">
+    <section id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+            <article class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    DailyList
+                    German Ordoñez
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -41,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <sub>Una nueva forma de organización</sub>
+                        <sub>> Laravel</sub>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -77,13 +72,13 @@
                         @endguest
                     </ul>
                 </div>
-            </div>
+            </article>
         </nav>
 
-        <main class="container">
+        <main class="container" style="margin-top:10px">
             @yield('content')
         </main>
-    </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
