@@ -8,20 +8,8 @@
     @if( $tarea->estado == 0)
     <h6 class="badge badge-warning">In Process</h6>
     @endif
-    <div class="card-body table-responsive">
-        <table class="table table-lg table-dark">
-            <thead>
-                <tr>
-                    <th scope="col">En</th>
-                    <th scope="col">Contrucción</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>{{ $tarea->estado }}</td>
-                    <td>{{ $tarea->user_id }}</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="card-body">
+        @include('tareas.detalle.form')
+        @include('tareas.detalle.index')
     </div>
 @endsection

@@ -19,6 +19,7 @@ Route::get('/', function () {
 });
 
 Route::resource('/tareas','TareasController');
+Route::resource('/detalle','TareasDetalleController');
 
 Auth::routes(['verify' => true]);
 
